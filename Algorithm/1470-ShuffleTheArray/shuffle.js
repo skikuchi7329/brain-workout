@@ -1,13 +1,17 @@
-const shuffle = function(nums,n) {
-  const resutl = [];
-  
-  for(let i = 0; i < nums.length){
-    if ()
+/**
+ * @param {number[]} nums
+ * @param {number} n
+ * @return {number[]}
+ */
+const shuffle = function (nums, n) {
+  const result = [];
+
+  for (let i = 0; i < n; i++) {
+    result.push(nums[i]);
+    result.push(nums[n + i]);
   }
-  
+
   return result;
-}
+};
 
-const nums = [1,1,2,2];
-
-console.log(shuffle(nums));
+module.exports = { shuffle };
