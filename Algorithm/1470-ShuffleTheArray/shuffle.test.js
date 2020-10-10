@@ -1,4 +1,4 @@
-const { shuffle } = require('.');
+const { shuffle } = require('./shuffle');
 
 const tests = [
   {
@@ -20,7 +20,6 @@ const tests = [
 
 describe('shuffle()', () => {
   for (const i of tests) {
-    console.log(i);
     test(`shuffle(${i.nums}, ${i.n}) should return ${i.result}`, () => {
       expect(shuffle(i.nums, i.n)).toStrictEqual(i.result);
     });
