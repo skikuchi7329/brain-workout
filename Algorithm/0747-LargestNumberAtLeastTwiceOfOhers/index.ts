@@ -1,8 +1,4 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
-const dominantIndex = function(nums) {
+export function dominantIndex (nums: number[]): number {
   let max = 0; // 最大値
   let maxIndex = 0; // 最大値のindex
   let second = 0; // 2位
@@ -23,6 +19,3 @@ const dominantIndex = function(nums) {
   }
   return -1;
 };
-
-module.exports = { dominantIndex };
-

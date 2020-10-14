@@ -6,10 +6,13 @@
   "author": "Shohei Kikuchi <killchance2256@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "npx jest"
+    "test": "jest"
   },
   "devDependencies": {
-    "jest": "^26.5.2",
-    "prettier": "^2.1.2"
+    "@types/jest": "^26.0.14",
+    "jest": "^26.5.3",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
   }
 }

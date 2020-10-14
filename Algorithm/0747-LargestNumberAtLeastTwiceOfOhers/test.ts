@@ -1,0 +1,24 @@
+import { dominantIndex } from '.'
+
+const name = 'dominantIndex';
+const tests = [
+  {
+    nums: [3, 6, 1, 0],
+    result: 1,
+  },
+  {
+    nums: [1, 2, 3, 4],
+    result: -1,
+  },
+  {
+    nums: [0, 0, 0, 1],
+    result: 3,
+  },
+];
+describe(`#${name})`, () => {
+  for (const i of tests) {
+    test(`${name}(${i.nums}) should return ${i.result}`, () => {
+      expect(dominantIndex(i.nums)).toStrictEqual(i.result);
+    });
+  }
+});

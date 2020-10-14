@@ -1,4 +1,4 @@
-const goodPairs = function (nums) {
+export function goodPairs(nums: number[]): number {
   const result = [];
   for (let i = 0; i < nums.length; i++) {
     for (let j = 0; j < nums.length; j++) {
@@ -10,4 +10,4 @@ const goodPairs = function (nums) {
   return result.length;
 };
 
-module.exports = goodPairs;
+
