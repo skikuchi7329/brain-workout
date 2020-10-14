@@ -1,6 +1,5 @@
-const defangIPaddr = function(address) {
+export function defangIPaddr (address: string): string {
   const splited = address.split('.');
   return splited.join('[.]');
 };
 
-module.exports = defangIPaddr;
