@@ -1,4 +1,4 @@
-const goodPairs = require("./goodPairs");
+import { goodPairs } from '.';
 
 const tests = [
   {
